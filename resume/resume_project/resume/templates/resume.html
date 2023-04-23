@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ name }} - Resume</title>
+</head>
+<body>
+    <img src="{{ avatar }}" alt="{{ name }}" width="200" height="200">
+    <h1>{{ name }}</h1>
+    <ul>
+        <li>Email: {{ email }}</li>
+        <li>Phone: {{ phone }}</li>
+        <li>Address: {{ address }}</li>
+    </ul>
+    <h2>Education</h2>
+    <ul>
+        {% for item in education %}
+        <li>{{ item.degree }} - {{ item.university }}, {{ item.date }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Skills</h2>
+    <ul>
+        {% for skill in skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Introduction</h2>
+    <p>{{ introduction }}</p>
+</body>
+</html>
