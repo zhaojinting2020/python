@@ -1,2 +1,1 @@
-Python Crash Course
-A copy
+Python Crash Course Copy
